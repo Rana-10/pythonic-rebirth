@@ -1,2 +1,97 @@
 # pythonic-rebirth
 
+---
+
+<p> A structured Python refresher and assignment repository developed during my AI/ML Engineering internship at CitrusBits. This repository documents my progression from Python fundamentals to advanced concepts, laying the groundwork for AI-powered healthcare product development. </p>
+
+## About
+
+---
+
+<p> This repository contains solutions to a curated set of Python assignments assigned by my internship mentor. The focus is on writing clean, well-documented, and strictly typed Python code, and not just getting the right output, but getting it the right way. All code is written from scratch. AI tools are used only for conceptual guidance, not code generation. </p>
+
+## Internship Context
+
+***
+
+<ul>
+    <li> Organization: CitrusBits </li>
+    <li> Role: AI/ML Engineering Intern </li>
+    <li> Mentor: AI/ML Engineer </li>
+    <li> Track: Python Fundamentals → Advanced Python → AI-Powered Healthcare Products </li>
+</ul>
+
+## Assignment Structure
+
+---
+
+<ul>
+    <li> Assignment 01 — Introduction to Python and Tools </li>
+    <li> Covers core Python concepts including: </li>
+    <li> Role differentiation: AI Engineer vs ML Engineer vs Data Scientist </li>
+    <li> Markdown documentation and README formatting </li>
+    <li> Poetry-based local project setup </li>
+    <li> String manipulation: palindromes, anagrams, character frequency, Caesar cipher </li>
+    <li> List operations: sorting, filtering unique elements, flattening nested lists </li>
+    <li> Matrix transposition without external libraries </li>
+    <li> Object-Oriented Programming: Contact Book, Shopping Cart, Quiz System, File Analyzer, Todo List, Shape Polymorphism </li>
+    <li> Mathematical utilities: prime checker, Fibonacci sequence, second largest element </li>
+    <li> Dictionary construction from parallel lists </li>
+    <li> Vowel and consonant counter </li>
+</ul>
+
+## Tech Stack
+
+---
+
+<ol>
+    <li>   Language: Python 3.12 </li>
+    <li> Environment Management: Poetry </li>
+    <li> Notebooks: Jupyter / Google Colab </li>
+    <li> Version Control: Git + GitHub </li>
+</ol>
+
+
+
+## Setup Instructions
+
+---
+
+### 1. Clone the repository
+
+git clone `https://github.com/Rana-10/pythonic-rebirth.git`
+
+cd pythonic-rebirth
+
+### 2. Install Poetry (if not already installed)
+
+curl -sSL `https://install.python-poetry.org` | python3 -
+
+### 3. Install dependencies
+
+poetry install
+
+### 4. Activate the virtual environment
+
+poetry shell
+
+## Code Standards
+
+---
+
+<ul>
+<li>Strict type annotations on all functions, parameters, return types, and variables </li>
+<li>Beginner-friendly inline documentation and docstrings</li>
+<li> Each version of the notebook is also committed locally to this repository</li>
+</ul>
+
+
+## Author
+
+---
+
+<ul>
+<li>Muhammad Azmat</li>
+<li>BS Data Science | FAST-NUCES Islamabad</li>
+<li>AI/ML Engineering Intern | CitrusBits </li>
+</ul>
