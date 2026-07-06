@@ -1,9 +1,12 @@
+[tool.poetry]
+package-mode = false
+
 [project]
-name = "poetry_add_pandas"
+name = "pythonic_rebirth"
 version = "3.0.4"
 description = "Latest Pandas version at this moment"
 authors = [
-    {name = "Muhammad Azmat",email = "muhammadazmat018@gmail.com"}
+    { name = "Muhammad Azmat", email = "muhammadazmat018@gmail.com" }
 ]
 readme = "README.md"
 requires-python = ">=3.12"
