@@ -21,24 +21,7 @@
     <li> Track: Python Fundamentals → Advanced Python → AI-Powered Healthcare Products </li>
 </ul>
 
-### Assignment Structure
 
----
-
-<ul>
-    <li> Assignment 01 — Introduction to Python and Tools </li>
-    <li> Covers core Python concepts including: </li>
-    <li> Role differentiation: AI Engineer vs ML Engineer vs Data Scientist </li>
-    <li> Markdown documentation and README formatting </li>
-    <li> Poetry-based local project setup </li>
-    <li> String manipulation: palindromes, anagrams, character frequency, Caesar cipher </li>
-    <li> List operations: sorting, filtering unique elements, flattening nested lists </li>
-    <li> Matrix transposition without external libraries </li>
-    <li> Object-Oriented Programming: Contact Book, Shopping Cart, Quiz System, File Analyzer, Todo List, Shape Polymorphism </li>
-    <li> Mathematical utilities: prime checker, Fibonacci sequence, second largest element </li>
-    <li> Dictionary construction from parallel lists </li>
-    <li> Vowel and consonant counter </li>
-</ul>
 
 ### Tech Stack
 
@@ -83,15 +66,4 @@ poetry shell
 <li>Strict type annotations on all functions, parameters, return types, and variables </li>
 <li>Beginner-friendly inline documentation and docstrings</li>
 <li> Each version of the notebook is also committed locally to this repository</li>
-</ul>
-
-
-### Author
-
----
-
-<ul>
-<li>Muhammad Azmat</li>
-<li>BS Data Science | FAST-NUCES Islamabad</li>
-<li>AI/ML Engineering Intern | CitrusBits </li>
 </ul>
