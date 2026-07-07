@@ -21,8 +21,6 @@
     <li> Track: Python Fundamentals → Advanced Python → AI-Powered Healthcare Products </li>
 </ul>
 
-
-
 ### Tech Stack
 
 ---
@@ -33,8 +31,6 @@
     <li> Notebooks: Jupyter / Google Colab </li>
     <li> Version Control: Git + GitHub </li>
 </ol>
-
-
 
 ### Setup Instructions
 
@@ -57,13 +53,3 @@ poetry install
 #### 4. Activate the virtual environment
 
 poetry shell
-
-### Code Standards
-
----
-
-<ul>
-<li>Strict type annotations on all functions, parameters, return types, and variables </li>
-<li>Beginner-friendly inline documentation and docstrings</li>
-<li> Each version of the notebook is also committed locally to this repository</li>
-</ul>
