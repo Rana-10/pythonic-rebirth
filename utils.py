@@ -1,8 +1,7 @@
 import random
 import numpy as np
 import torch
-
-RANDOM_SEED = 42
+from constants import RANDOM_SEED
 
 
 def set_seed(seed=RANDOM_SEED):
