@@ -1,4 +1,8 @@
+# outputs/ tells Git to look for a regular folder literally named "outputs".
+#.outputs/ tells Git to look for a folder that has a dot at the very beginning of its name (like .venv/ or .idea/).
+
 .idea/
 .venv/
 .btcusd_1-min_data/
 outputs/
+txt_files/
