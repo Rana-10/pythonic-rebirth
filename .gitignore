@@ -1,3 +1,4 @@
 .idea/
 .venv/
 .btcusd_1-min_data/
+.outputs/
