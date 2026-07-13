@@ -61,3 +61,10 @@ Allow time for the Python interpreter to finish updating.
 ### 9. Restart and Run
 
 Restart your IDE and run the project.
+
+## Additional Resources
+
+All datasets, images, trained models, outputs, and text files used in the project are available at the
+following Google Drive link:
+
+[Google Drive Link](https://drive.google.com/drive/folders/1FAXXnZX2AYTDXUlqxEK0AGTkEubFfiLg?usp=sharing)
