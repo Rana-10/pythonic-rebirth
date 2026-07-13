@@ -3,7 +3,8 @@
 
 .idea/
 .venv/
-.btcusd_1-min_data/
+#.btcusd_1-min_data/
 outputs/
 txt_files/
 models/
+datasets/
