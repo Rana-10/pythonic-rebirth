@@ -1,55 +1,63 @@
-# pythonic-rebirth
+# Project Setup Guide
 
----
+## Prerequisites
 
-<p> A structured Python refresher and assignment repository developed during my AI/ML Engineering internship at CitrusBits. This repository documents my progression from Python fundamentals to advanced concepts, laying the groundwork for AI-powered healthcare product development. </p>
+- Windows PowerShell (Administrator access)
+- Python installed on your system
 
-### About
+## Installation Steps
 
----
+### 1. Clone the Repository
 
-<p> This repository contains solutions to a curated set of Python assignments assigned by my internship mentor. The focus is on writing clean, well-documented, and strictly typed Python code, and not just getting the right output, but getting it the right way. All code is written from scratch. AI tools are used only for conceptual guidance, not code generation. </p>
+Clone the repository using the GitHub link.
 
-### Internship Context
+### 2. Install Poetry
 
-***
+Open Windows PowerShell **as Administrator** and run the following command:
 
-<ul>
-    <li> Organization: CitrusBits </li>
-    <li> Role: AI/ML Engineering Intern </li>
-    <li> Mentor: AI/ML Engineer </li>
-    <li> Track: Python Fundamentals → Advanced Python → AI-Powered Healthcare Products </li>
-</ul>
+```powershell
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
+```
 
-### Tech Stack
+### 3. Configure Environment Variables
 
----
+After a successful installation, a path will be displayed, similar to:
 
-<ol>
-    <li>   Language: Python 3.12 </li>
-    <li> Environment Management: Poetry </li>
-    <li> Notebooks: Jupyter / Google Colab </li>
-    <li> Version Control: Git + GitHub </li>
-</ol>
+```
+C:\Users\<YourUsername>\AppData\Roaming\Python\Scripts
+```
 
-### Setup Instructions
+Add this path to your system's **Environment Variables**.
 
----
+### 4. Restart PowerShell and IDE
 
-#### 1. Clone the repository
+Close PowerShell and restart your IDE for the changes to take effect.
 
-git clone `https://github.com/Rana-10/pythonic-rebirth.git`
+### 5. Verify Poetry Installation
 
-cd pythonic-rebirth
+Open your IDE and confirm the installation by checking the Poetry version:
 
-#### 2. Install Poetry (if not already installed)
+```powershell
+poetry --version
+```
 
-curl -sSL `https://install.python-poetry.org` | python3 -
+### 6. Install Dependencies
 
-#### 3. Install dependencies
+Run the following command to install all required packages and libraries for the project:
 
+```powershell
 poetry install
+```
 
-#### 4. Activate the virtual environment
+### 7. Select the Interpreter
 
-poetry shell
+Run any `.py` or `.ipynb` file in the project. You will be prompted to select an interpreter. Choose **Local Interpreter
+** which is the Poetry environment. It should be pre-loaded and available as an option.
+
+### 8. Wait for Interpreter Setup
+
+Allow time for the Python interpreter to finish updating.
+
+### 9. Restart and Run
+
+Restart your IDE and run the project.
