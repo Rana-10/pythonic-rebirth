@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import joblib
 import numpy as np
 import torch
@@ -7,8 +8,10 @@ import torch.nn as nn
 from PIL import Image
 
 app = Flask(__name__)
+CORS(app)
 
 model1 = joblib.load("D:/CitrusBits/pythonic-rebirth/models/insurance_decision_tree_model.pkl")
+scaler1 = joblib.load("D:/CitrusBits/pythonic-rebirth/models/insurance_scaler.pkl")
 model2 = joblib.load("D:/CitrusBits/pythonic-rebirth/models/indian_diabetes_decision_tree.pkl")
 
 
@@ -47,7 +50,7 @@ pneumonia_transform = transforms.Compose([
 @app.route("/")  # @app.route("/") -> this decorator is what maps a URL path to the function right below it.
 # When someone visits /, Flask calls home() and sends back whatever it returns.
 def home():
-    return "Flask checking & running"
+    return "Flask running"
 
 
 @app.route("/predict/medical-cost", methods=["POST"])
@@ -62,8 +65,13 @@ def predict_medical_cost():
     region_southeast = 1 if data["region"] == "southeast" else 0
     region_southwest = 1 if data["region"] == "southwest" else 0
 
+    # Scale ONLY age, bmi, children -- same 3 columns, same order the scaler was fit on
+    raw_numeric = np.array([[data["age"], data["bmi"], data["children"]]])
+    scaled_numeric = scaler1.transform(raw_numeric)
+    scaled_age, scaled_bmi, scaled_children = scaled_numeric[0]
+
     features1 = np.array([[
-        data["age"], sex, data["bmi"], data["children"], smoker,
+        scaled_age, sex, scaled_bmi, scaled_children, smoker,
         region_northeast, region_northwest, region_southeast, region_southwest
     ]])
 
