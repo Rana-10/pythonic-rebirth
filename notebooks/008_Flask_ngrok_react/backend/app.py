@@ -6,13 +6,15 @@ import torch
 from torchvision import models, transforms
 import torch.nn as nn
 from PIL import Image
+import os
+from constants import *
 
 app = Flask(__name__)
 CORS(app)
 
-model1 = joblib.load("D:/CitrusBits/pythonic-rebirth/models/insurance_decision_tree_model.pkl")
-scaler1 = joblib.load("D:/CitrusBits/pythonic-rebirth/models/insurance_scaler.pkl")
-model2 = joblib.load("D:/CitrusBits/pythonic-rebirth/models/indian_diabetes_decision_tree.pkl")
+model1 = joblib.load(os.path.join(MODELS_DIR, "insurance_decision_tree_model.pkl"))
+scaler1 = joblib.load(os.path.join(MODELS_DIR, "insurance_scaler.pkl"))
+model2 = joblib.load(os.path.join(MODELS_DIR, "indian_diabetes_decision_tree.pkl"))
 
 
 # model 3 is a pytorch model, and thus cannot be loaded with joblib
@@ -25,7 +27,7 @@ def load_pneumonia_model():
 
     # 2. Load your saved weights into that empty architecture
     state_dict = torch.load(
-        "D:/CitrusBits/pythonic-rebirth/models/chest_xray_resnet18_transfer.pth",
+        os.path.join(MODELS_DIR, "chest_xray_resnet18_transfer.pth"),
         map_location="cpu"
     )
     model.load_state_dict(state_dict)
