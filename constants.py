@@ -1,6 +1,6 @@
 import os
 
-RANDOM_SEED = 42
+RANDOM_SEED = 65
 
 PROJECT_ROOT = "D:/CitrusBits/pythonic-rebirth"
 DATASETS_DIR = os.path.join(PROJECT_ROOT, "datasets")
