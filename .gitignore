@@ -9,4 +9,5 @@ txt_files/
 models/
 datasets/
 images/
-frontend/node_modules
+medical_frontend/node_modules
+flight_delay/flight_delay_frontend/node_modules
