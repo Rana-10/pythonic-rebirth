@@ -1,0 +1,14 @@
+$kind: http-request
+name: pneumonia
+url: "{{BASE_URL}}/predict/pneumonia"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: image
+      src:
+        - /D:/CitrusBits/pythonic-rebirth/datasets/chest_xray/test/NORMAL/IM-0005-0001.jpeg
+      description: ""
+      disabled: false
+order: 297165977748870

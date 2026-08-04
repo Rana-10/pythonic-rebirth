@@ -1,0 +1,23 @@
+$kind: http-request
+url: http://localhost:8000/predict
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"origin\": \"JFK\",\r
+
+    \  \"dest\": \"LAX\",\r
+
+    \  \"carrier\": \"AA\",\r
+
+    \  \"distance\": -50,\r
+
+    \  \"fl_date\": \"2026-08-15\",\r
+
+    \  \"crs_dep_hour\": 10,\r
+
+    \  \"crs_arr_hour\": 13\r
+
+    }"
+order: 4138295842569249

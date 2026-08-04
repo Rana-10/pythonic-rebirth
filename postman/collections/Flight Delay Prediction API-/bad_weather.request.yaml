@@ -1,0 +1,35 @@
+$kind: http-request
+url: http://localhost:8000/predict
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"origin\": \"ORD\",\r
+
+    \  \"dest\": \"DEN\",\r
+
+    \  \"carrier\": \"AA\",\r
+
+    \  \"distance\": 888,\r
+
+    \  \"fl_date\": \"2026-07-04\",\r
+
+    \  \"crs_dep_hour\": 17,\r
+
+    \  \"crs_arr_hour\": 19,\r
+
+    \  \"temp\": 5,\r
+
+    \  \"rhum\": 90,\r
+
+    \  \"prcp\": 15,\r
+
+    \  \"wspd\": 40,\r
+
+    \  \"pres\": 995,\r
+
+    \  \"coco\": 15\r
+
+    }"
+order: 1508874000735342

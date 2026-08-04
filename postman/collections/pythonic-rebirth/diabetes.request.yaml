@@ -1,0 +1,26 @@
+$kind: http-request
+name: diabetes
+url: "{{BASE_URL}}/predict/diabetes"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"pregnancies\": 2,\r
+
+    \  \"glucose\": 130,\r
+
+    \  \"blood_pressure\": 70,\r
+
+    \  \"skin_thickness\": 25,\r
+
+    \  \"insulin\": 80,\r
+
+    \  \"bmi\": 28.5,\r
+
+    \  \"diabetes_pedigree_function\": 0.45,\r
+
+    \  \"age\": 33\r
+
+    }"
+order: 160871014116544

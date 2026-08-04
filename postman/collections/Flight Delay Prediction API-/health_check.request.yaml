@@ -1,0 +1,8 @@
+$kind: http-request
+name: health_check
+url: http://localhost:8000/
+method: GET
+body:
+  type: json
+  content: ""
+order: 4467520175645318
