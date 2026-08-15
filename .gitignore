@@ -13,4 +13,4 @@ medical_frontend/node_modules
 flight_delay/flight_delay_frontend/node_modules
 pdfs/
 RAG/atlas-credentials.env
-RAG/rag-frontend
+RAG/rag-frontend/node_modules
