@@ -1,0 +1,4 @@
+$kind: collection
+name: medical
+variables:
+  BASE_URL: ""

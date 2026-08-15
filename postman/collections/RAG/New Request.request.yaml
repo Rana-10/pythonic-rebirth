@@ -1,0 +1,12 @@
+$kind: http-request
+name: New Request
+url: http://localhost:8000/chat
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"question\": \"What is retrieval augmented generation?\"\r
+
+    }"
+order: 1786603545840
